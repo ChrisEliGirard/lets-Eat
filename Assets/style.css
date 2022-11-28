@@ -139,6 +139,9 @@ footer {
   /* Card Formatting for after the Food Selector is Ran */
   #cardFooterTitle {
     text-align: center;
+    background-color: yellow;
+    border-radius: 25px;
+    padding: 5px;
   }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/

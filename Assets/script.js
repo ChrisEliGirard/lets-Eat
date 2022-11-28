@@ -2,6 +2,7 @@
 var eatInBtn = document.querySelector("#eatIn");
 var eatOutBtn = document.querySelector("#eatOut");
 var inOrOutBtn = document.querySelector("#inOrOut");
+var display = document.getElementById("selectorBody");
 var decision = ""
 var i = ""
 
@@ -17,19 +18,25 @@ function eatingIn(event) {
   var food = ["Chicken Alfredo", "Breakfast Burritos", "Coffee 😅", "My Love"]
   itemSelector(food);
   food = food[i];
+  // Console Log
   console.log(food);
+  display.children[0].textContent = "Tonight we're staying in to consume " + food + "!"
+  btnCleanUp();
 }
 
 // Write the function for choosing a random restaurant to go to
 function eatingOut(event) {  
   decision = "eatOut"
-    // Initialize Restaurant Array and accompanying variables
-    var restaurants = ["PDQ", "Starbucks", "Chipotle", "Cheddar's"]
-    // Call Decision Making Function
-    itemSelector(restaurants);
-    // Return to function to finish the decision 
-    restaurants = restaurants[i];
-    console.log(restaurants);
+  // Initialize Restaurant Array and accompanying variables
+  var restaurants = ["PDQ", "Starbucks", "Chipotle", "Cheddar's"]
+  // Call Decision Making Function
+  itemSelector(restaurants);
+  // Return to function to finish the decision 
+  restaurants = restaurants[i];
+  // Console Log
+  console.log(restaurants);
+  display.children[0].textContent = "Tonight we're going out to " + restaurants + "!"
+  btnCleanUp();
 }
 
 // Write function to make the decision of eating in or out
@@ -64,7 +71,6 @@ function btnCleanUp() {
   elSubtitle.setAttribute("id", "cardFooterTitle");
   cardFooterTitle = document.getElementById("cardFooterTitle");
   cardFooterTitle.textContent = ("Problem Solved... I hope 😅");
-
 }
 
 // Write a math function
@@ -74,8 +80,8 @@ function itemSelector(x, y) {
 }
 
 // Write Selected Restraunt to the #location input
-function writeLocation() {
-  var location = selectLocation();
-  var locationText = document.querySelector("#location");
-  locationText.value = location;
-}
+// function writeLocation() {
+//   var location = selectLocation();
+//   var locationText = document.querySelector("#location");
+//   locationText.value = location;
+// }
