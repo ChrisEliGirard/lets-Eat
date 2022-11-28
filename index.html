@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Selector</title>
+    <link rel="stylesheet" href="./Assets/style.css" />
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Food Selector for the Indecisive</h1>
+      </header>
+      
+      <!-- Card for the Food Selector Application -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Can't decide on what to eat?</h2>
+        </div>
+        <div id="selectorBody" class="card-body">
+          <textarea
+            readonly
+            id="location"
+            placeholder="This is where the Restaurant or Dish will appear after it has been selected, hopefully you'll agree with it 😂"
+            aria-label="Problem Solved"
+          ></textarea>
+        </div>
+        <div id="buttonSpace" class="card-footer">
+          <button id="eatIn" class="btn">Eat In</button>
+          <button id="eatOut" class="btn">Eat Out</button>
+          <button id="inOrOut" class="btn">Choose for me</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./Assets/script.js"></script>
+  </body>
+
+  <!-- An Extra Special Suprise to Come Later! -->
+  <footer>
+    <button id="supriseMe" class="btn">Suprise Me</button>
+  </footer>
+</html>
