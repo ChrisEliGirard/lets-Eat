@@ -14,7 +14,12 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #bbb36c;
+  background: radial-gradient(circle, aqua, rgb(0, 153, 255));
+}
+
+h1 {
+  border-bottom: 2px solid hsl(206, 17%, 28%);;
+  border-radius: 10%;
 }
 
 .wrapper {
@@ -31,7 +36,7 @@ header {
 }
 
 .card {
-  background-color: rgb(35, 187, 233);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,13 +45,15 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  /*background: #e7e9eb;*/
+  background-color: gray;
   height: 2px;
 }
 
@@ -62,7 +69,8 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  /* background: #e7e9eb; */
+  background-color: gray;
   height: 2px;
 }
 
@@ -112,7 +120,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px dashed gray;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

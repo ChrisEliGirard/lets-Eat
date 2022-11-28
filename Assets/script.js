@@ -78,10 +78,3 @@ function itemSelector(x, y) {
   i = (Math.floor(Math.random()*x.length));
   return i
 }
-
-// Write Selected Restraunt to the #location input
-// function writeLocation() {
-//   var location = selectLocation();
-//   var locationText = document.querySelector("#location");
-//   locationText.value = location;
-// }
