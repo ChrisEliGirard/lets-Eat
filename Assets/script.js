@@ -15,7 +15,7 @@ inOrOutBtn.addEventListener("click", eatingInOrOut);
 function eatingIn(event) {
   decision = "eatIn"
   // Initialize Food Array and accompanying variables
-  var food = ["Chicken Alfredo", "Breakfast Burritos", "Coffee 😅", "My Love"]
+  var food = ["Chicken Alfredo", "Breakfast Burritos", "Coffee 😅", "A Freshbox Meal"]
   itemSelector(food);
   food = food[i];
   // Console Log
